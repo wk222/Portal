@@ -5,16 +5,18 @@ import com.baidu.mapapi.map.BaiduMap
 import com.baidu.mapapi.map.BitmapDescriptorFactory
 import com.baidu.mapapi.map.MyLocationConfiguration
 import com.baidu.mapapi.search.sug.SuggestionResult
-import moe.fuqiuluo.portal.ext.Loc4j
+import moe.fuqiuluo.portal.ext.CoordinateTransformUtil
 
 fun SuggestionResult.toPoi(
     currentLocation: Pair<Double, Double>? = null
 ) = this.allSuggestions
     .filter { it.key != null && it.pt != null }
     .map {
-    val gcj02Lat = it.pt.latitude
-    val gcj02Lon = it.pt.longitude
-    val (lat, lon) = Loc4j.gcj2wgs(gcj02Lat, gcj02Lon)
+    val bd09Lat = it.pt.latitude
+    val bd09Lon = it.pt.longitude
+    val wgs84 = CoordinateTransformUtil.bd09toWgs84(bd09Lon, bd09Lat)
+    val lon = wgs84[0]
+    val lat = wgs84[1]
     if (currentLocation != null) {
         Log.d("toPoi", "currentLocation: $currentLocation, lat: $lat, lon: $lon")
         Poi(

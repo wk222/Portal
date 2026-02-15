@@ -169,7 +169,7 @@ object RemoteCommandHandler {
                 FakeLoc.bearing = bearing
                 FakeLoc.hasBearings = true
                 return updateCoordinate(newLoc.first, newLoc.second).also {
-                    if (FakeLoc.isSystemServerProcess) LocationServiceHook.callOnLocationChanged()
+                    LocationServiceHook.callOnLocationChanged()
                 }
             }
             "update_location" -> {

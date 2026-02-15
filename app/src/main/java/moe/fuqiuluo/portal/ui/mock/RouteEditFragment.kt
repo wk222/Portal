@@ -104,7 +104,7 @@ class RouteEditFragment : Fragment() {
 
             setOnMapClickListener(object : BaiduMap.OnMapClickListener {
                 override fun onMapClick(loc: LatLng) {
-                    // 默认获取的gcj02坐标，需要转换一下
+                    // 默认获取的BD09坐标，需要转换一下
                     baiduMapViewModel.markedLoc = loc.wgs84
 
                     lifecycleScope.launch {
@@ -128,7 +128,7 @@ class RouteEditFragment : Fragment() {
             setOnMapLongClickListener { loc ->
                 if (loc == null) return@setOnMapLongClickListener
 
-                // 默认获取的gcj02坐标，需要转换一下
+                // 默认获取的BD09坐标，需要转换一下
                 baiduMapViewModel.markedLoc = loc.wgs84
                 lifecycleScope.launch {
                     baiduMapViewModel.showDetailView = true

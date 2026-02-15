@@ -32,11 +32,9 @@ class Portal: Application() {
     }
 
     companion object {
-        val DEFAULT_COORD_TYPE = CoordType.GCJ02
-        const val DEFAULT_COORD_STR = "GCJ02"
+        val DEFAULT_COORD_TYPE = CoordType.BD09LL
+        const val DEFAULT_COORD_STR = "bd09ll"
 
         lateinit var appContext: Context
-        //val DEFAULT_COORD_TYPE = CoordType.BD09LL
-        //const val DEFAULT_COORD_STR = "bd09ll"
     }
 }

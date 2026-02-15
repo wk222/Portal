@@ -1,0 +1,271 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.9/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :app
+Full architecture and full compilation.
+Full compilation of arm64 architecture
+Full compilation of x64 architecture
+
+> Configure project :xposed
+WARNING: The following problems were found when resolving the SDK location:
+Where: sdk.dir property in local.properties file. Problem: Directory does not exist
+
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preAppDebugBuild UP-TO-DATE
+> Task :app:mergeAppDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateAppDebugResValues
+> Task :app:dataBindingMergeDependencyArtifactsAppDebug
+> Task :app:generateAppDebugResources
+> Task :xposed:preBuild UP-TO-DATE
+> Task :xposed:preDebugBuild UP-TO-DATE
+> Task :xposed:generateDebugResValues UP-TO-DATE
+> Task :xposed:generateDebugResources UP-TO-DATE
+> Task :xposed:packageDebugResources UP-TO-DATE
+> Task :app:packageAppDebugResources
+> Task :xposed:parseDebugLocalResources UP-TO-DATE
+> Task :xposed:generateDebugRFile UP-TO-DATE
+> Task :xposed:writeDebugAarMetadata UP-TO-DATE
+> Task :app:mergeAppDebugResources
+> Task :app:mapAppDebugSourceSetPaths
+> Task :app:checkAppDebugAarMetadata
+> Task :app:parseAppDebugLocalResources
+> Task :app:createAppDebugCompatibleScreenManifests
+> Task :app:dataBindingGenBaseClassesAppDebug
+> Task :app:extractDeepLinksAppDebug
+> Task :xposed:extractDeepLinksDebug UP-TO-DATE
+> Task :xposed:processDebugManifest UP-TO-DATE
+
+> Task :app:processAppDebugMainManifest
+D:\Portal-master\app\src\main\AndroidManifest.xml:47:9-41 Warning:
+	android:extractNativeLibs should not be specified in this source AndroidManifest.xml file. See https://d.android.com/guide/topics/manifest/application-element#extractNativeLibs for more information.
+The AGP Upgrade Assistant can remove the attribute from the AndroidManifest.xml file and update the build file accordingly. See https://d.android.com/studio/build/agp-upgrade-assistant for more information.
+
+> Task :app:processAppDebugManifest
+> Task :xposed:compileDebugLibraryResources UP-TO-DATE
+> Task :nmea:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :nmea:processResources NO-SOURCE
+> Task :system-api:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :system-api:preBuild UP-TO-DATE
+> Task :system-api:preDebugBuild UP-TO-DATE
+> Task :system-api:generateDebugResValues
+> Task :system-api:generateDebugResources
+> Task :system-api:packageDebugResources
+> Task :system-api:parseDebugLocalResources
+> Task :system-api:javaPreCompileDebug
+> Task :xposed:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :xposed:javaPreCompileDebug UP-TO-DATE
+> Task :app:javaPreCompileAppDebug
+> Task :app:mergeAppDebugShaders
+> Task :app:compileAppDebugShaders NO-SOURCE
+> Task :app:generateAppDebugAssets UP-TO-DATE
+> Task :xposed:mergeDebugShaders UP-TO-DATE
+> Task :xposed:compileDebugShaders NO-SOURCE
+> Task :xposed:generateDebugAssets UP-TO-DATE
+> Task :system-api:generateDebugRFile
+> Task :xposed:packageDebugAssets UP-TO-DATE
+> Task :system-api:compileDebugKotlin NO-SOURCE
+> Task :system-api:compileDebugJavaWithJavac
+> Task :system-api:bundleLibCompileToJarDebug
+> Task :app:mergeAppDebugAssets
+> Task :app:compressAppDebugAssets
+> Task :app:checkAppDebugDuplicateClasses
+> Task :app:mergeAppDebugJniLibFolders
+> Task :nmea:compileKotlin
+> Task :xposed:configureCMakeDebug[arm64-v8a]
+> Task :nmea:compileJava NO-SOURCE
+> Task :nmea:classes UP-TO-DATE
+> Task :nmea:jar
+> Task :app:processAppDebugManifestForPackage
+> Task :xposed:compileDebugKotlin UP-TO-DATE
+> Task :xposed:compileDebugJavaWithJavac NO-SOURCE
+> Task :xposed:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :xposed:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :xposed:processDebugJavaRes UP-TO-DATE
+> Task :xposed:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :app:processAppDebugResources
+> Task :xposed:buildCMakeDebug[arm64-v8a]
+> Task :app:mergeLibDexAppDebug
+> Task :app:desugarAppDebugFileDependencies
+> Task :xposed:configureCMakeDebug[armeabi-v7a]
+
+> Task :app:compileAppDebugKotlin
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:156:58 'static field FLAG_TRANSLUCENT_STATUS: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:157:20 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:162:30 'var systemUiVisibility: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:162:56 'static field SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:253:44 'constructor(p0: Context!): Notification.Builder' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:268:20 'field defaults: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/android/widget/RockerView.kt:86:31 'fun getColor(p0: Int): Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/android/widget/RockerView.kt:90:41 'fun getColor(p0: Int): Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/android/window/OverlayUtils.kt:19:31 'fun checkOpNoThrow(p0: String, p1: Int, p2: String): Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/ui/home/HomeFragment.kt:153:16 'var isOpenGps: Boolean' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/ui/mock/Rocker.kt:58:60 'static field TYPE_PHONE: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/ui/mock/RouteEditFragment.kt:229:16 'var isOpenGps: Boolean' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/ui/viewmodel/MockServiceViewModel.kt:57:25 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/ui/viewmodel/MockServiceViewModel.kt:83:28 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+
+> Task :app:compileAppDebugJavaWithJavac
+> Task :app:dexBuilderAppDebug
+> Task :app:mergeAppDebugGlobalSynthetics
+> Task :app:processAppDebugJavaRes
+> Task :app:mergeProjectDexAppDebug
+> Task :app:mergeExtDexAppDebug
+> Task :app:mergeAppDebugJavaResource
+> Task :xposed:buildCMakeDebug[armeabi-v7a]
+> Task :xposed:configureCMakeDebug[x86]
+> Task :xposed:buildCMakeDebug[x86]
+> Task :xposed:configureCMakeDebug[x86_64]
+> Task :xposed:buildCMakeDebug[x86_64]
+> Task :xposed:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:validateSigningAppDebug
+> Task :app:writeAppDebugAppMetadata
+> Task :xposed:mergeDebugNativeLibs
+> Task :app:writeAppDebugSigningConfigVersions
+> Task :app:preArm64DebugBuild UP-TO-DATE
+> Task :app:mergeArm64DebugNativeDebugMetadata NO-SOURCE
+> Task :xposed:copyDebugJniLibsProjectOnly
+> Task :app:dataBindingMergeDependencyArtifactsArm64Debug
+> Task :app:generateArm64DebugResValues
+> Task :app:generateArm64DebugResources
+> Task :app:mergeAppDebugNativeLibs
+
+> Task :app:stripAppDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libBaiduMapSDK_base_v7_6_2.so, libBaiduMapSDK_map_v7_6_2.so, libBugly_Native.so, libc++_shared.so, liblocSDK8b.so, libportal.so, libtiny_magic.so.
+
+> Task :app:packageArm64DebugResources
+> Task :app:mergeArm64DebugResources
+> Task :app:mapArm64DebugSourceSetPaths
+> Task :app:checkArm64DebugAarMetadata
+> Task :app:createArm64DebugCompatibleScreenManifests
+> Task :app:extractDeepLinksArm64Debug
+> Task :app:parseArm64DebugLocalResources
+
+> Task :app:processArm64DebugMainManifest
+D:\Portal-master\app\src\main\AndroidManifest.xml:47:9-41 Warning:
+	android:extractNativeLibs should not be specified in this source AndroidManifest.xml file. See https://d.android.com/guide/topics/manifest/application-element#extractNativeLibs for more information.
+The AGP Upgrade Assistant can remove the attribute from the AndroidManifest.xml file and update the build file accordingly. See https://d.android.com/studio/build/agp-upgrade-assistant for more information.
+
+> Task :app:dataBindingGenBaseClassesArm64Debug
+> Task :app:processArm64DebugManifest
+> Task :app:javaPreCompileArm64Debug
+> Task :app:mergeArm64DebugShaders
+> Task :app:compileArm64DebugShaders NO-SOURCE
+> Task :app:generateArm64DebugAssets UP-TO-DATE
+> Task :app:mergeArm64DebugAssets
+> Task :app:compressArm64DebugAssets
+> Task :app:checkArm64DebugDuplicateClasses
+> Task :app:mergeArm64DebugJniLibFolders
+> Task :app:processArm64DebugManifestForPackage
+> Task :app:validateSigningArm64Debug
+> Task :app:writeArm64DebugAppMetadata
+> Task :app:writeArm64DebugSigningConfigVersions
+> Task :app:preX64DebugBuild UP-TO-DATE
+> Task :app:mergeX64DebugNativeDebugMetadata NO-SOURCE
+> Task :app:mergeLibDexArm64Debug
+> Task :app:mergeArm64DebugNativeLibs
+> Task :app:dataBindingMergeDependencyArtifactsX64Debug
+> Task :app:generateX64DebugResValues
+> Task :app:generateX64DebugResources
+
+> Task :app:stripArm64DebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libBaiduMapSDK_base_v7_6_2.so, libBaiduMapSDK_map_v7_6_2.so, libBugly_Native.so, libc++_shared.so, liblocSDK8b.so, libportal.so, libtiny_magic.so.
+
+> Task :app:packageAppDebug
+> Task :app:createAppDebugApkListingFileRedirect
+> Task :app:assembleAppDebug
+> Task :app:mergeX64DebugResources
+> Task :app:packageX64DebugResources
+> Task :app:checkX64DebugAarMetadata
+> Task :app:mapX64DebugSourceSetPaths
+> Task :app:createX64DebugCompatibleScreenManifests
+> Task :app:extractDeepLinksX64Debug
+> Task :app:parseX64DebugLocalResources
+> Task :app:dataBindingGenBaseClassesX64Debug
+
+> Task :app:processX64DebugMainManifest
+D:\Portal-master\app\src\main\AndroidManifest.xml:47:9-41 Warning:
+	android:extractNativeLibs should not be specified in this source AndroidManifest.xml file. See https://d.android.com/guide/topics/manifest/application-element#extractNativeLibs for more information.
+The AGP Upgrade Assistant can remove the attribute from the AndroidManifest.xml file and update the build file accordingly. See https://d.android.com/studio/build/agp-upgrade-assistant for more information.
+
+> Task :app:processX64DebugManifest
+> Task :app:javaPreCompileX64Debug
+> Task :app:mergeX64DebugShaders
+> Task :app:compileX64DebugShaders NO-SOURCE
+> Task :app:generateX64DebugAssets UP-TO-DATE
+> Task :app:mergeX64DebugAssets
+> Task :app:compressX64DebugAssets
+> Task :app:processX64DebugManifestForPackage
+> Task :app:checkX64DebugDuplicateClasses
+> Task :app:mergeLibDexX64Debug
+> Task :app:mergeX64DebugJniLibFolders
+> Task :app:validateSigningX64Debug
+> Task :app:writeX64DebugAppMetadata
+> Task :app:writeX64DebugSigningConfigVersions
+> Task :app:mergeX64DebugNativeLibs
+
+> Task :app:stripX64DebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libBaiduMapSDK_base_v7_6_2.so, libBaiduMapSDK_map_v7_6_2.so, libBugly_Native.so, libc++_shared.so, liblocSDK8b.so, libportal.so, libtiny_magic.so.
+
+> Task :app:processArm64DebugResources
+> Task :app:processX64DebugResources
+> Task :app:desugarArm64DebugFileDependencies
+> Task :app:desugarX64DebugFileDependencies
+
+> Task :app:compileArm64DebugKotlin
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:156:58 'static field FLAG_TRANSLUCENT_STATUS: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:157:20 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:162:30 'var systemUiVisibility: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:162:56 'static field SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:253:44 'constructor(p0: Context!): Notification.Builder' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:268:20 'field defaults: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/android/widget/RockerView.kt:86:31 'fun getColor(p0: Int): Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/android/widget/RockerView.kt:90:41 'fun getColor(p0: Int): Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/android/window/OverlayUtils.kt:19:31 'fun checkOpNoThrow(p0: String, p1: Int, p2: String): Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/ui/home/HomeFragment.kt:153:16 'var isOpenGps: Boolean' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/ui/mock/Rocker.kt:58:60 'static field TYPE_PHONE: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/ui/mock/RouteEditFragment.kt:229:16 'var isOpenGps: Boolean' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/ui/viewmodel/MockServiceViewModel.kt:57:25 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/ui/viewmodel/MockServiceViewModel.kt:83:28 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+
+> Task :app:compileX64DebugKotlin
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:156:58 'static field FLAG_TRANSLUCENT_STATUS: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:157:20 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:162:30 'var systemUiVisibility: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:162:56 'static field SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:253:44 'constructor(p0: Context!): Notification.Builder' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/MainActivity.kt:268:20 'field defaults: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/android/widget/RockerView.kt:86:31 'fun getColor(p0: Int): Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/android/widget/RockerView.kt:90:41 'fun getColor(p0: Int): Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/android/window/OverlayUtils.kt:19:31 'fun checkOpNoThrow(p0: String, p1: Int, p2: String): Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/ui/home/HomeFragment.kt:153:16 'var isOpenGps: Boolean' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/ui/mock/Rocker.kt:58:60 'static field TYPE_PHONE: Int' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/ui/mock/RouteEditFragment.kt:229:16 'var isOpenGps: Boolean' is deprecated. Deprecated in Java.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/ui/viewmodel/MockServiceViewModel.kt:57:25 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///D:/Portal-master/app/src/main/java/moe/fuqiuluo/portal/ui/viewmodel/MockServiceViewModel.kt:83:28 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+
+> Task :app:mergeExtDexArm64Debug
+> Task :app:compileArm64DebugJavaWithJavac
+> Task :app:dexBuilderArm64Debug
+> Task :app:mergeArm64DebugGlobalSynthetics
+> Task :app:processArm64DebugJavaRes
+> Task :app:mergeProjectDexArm64Debug
+> Task :app:mergeExtDexX64Debug
+> Task :app:compileX64DebugJavaWithJavac
+> Task :app:dexBuilderX64Debug
+> Task :app:mergeX64DebugGlobalSynthetics
+> Task :app:processX64DebugJavaRes
+> Task :app:mergeProjectDexX64Debug
+> Task :app:mergeArm64DebugJavaResource
+> Task :app:packageArm64Debug
+> Task :app:createArm64DebugApkListingFileRedirect
+> Task :app:assembleArm64Debug
+> Task :app:mergeX64DebugJavaResource
+> Task :app:packageX64Debug
+> Task :app:createX64DebugApkListingFileRedirect
+> Task :app:assembleX64Debug
+> Task :app:assembleDebug
+
+BUILD SUCCESSFUL in 1m 54s
+152 actionable tasks: 134 executed, 18 up-to-date
